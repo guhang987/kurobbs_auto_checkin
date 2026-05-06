@@ -38,19 +38,17 @@ class KurobbsClient:
         self.session = requests.Session()
         self.session.headers.update(
             {
-                "osversion": "Android",
-                "devcode": "2fba3859fe9bfe9099f2696b8648c2c6",
-                "countrycode": "CN",
-                "ip": "10.0.2.233",
-                "model": "2211133C",
-                "source": "android",
+                "devCode": "QpnYoJZg5Ruf4HUSBizU2g0bOTH791WP",
+                "source": "h5",
                 "lang": "zh-Hans",
-                "version": "1.0.9",
-                "versioncode": "1090",
+                "version": "3.0.1",
                 "token": self.token,
-                "content-type": "application/x-www-form-urlencoded; charset=utf-8",
-                "accept-encoding": "gzip",
-                "user-agent": "okhttp/3.10.0",
+                "content-type": "application/x-www-form-urlencoded;charset=utf-8",
+                "accept-encoding": "gzip, deflate, br, zstd",
+                "accept": "application/json, text/plain, */*",
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.3.1 Safari/605.1.15",
+                "origin": "https://www.kurobbs.com",
+                "referer": "https://www.kurobbs.com/",
             }
         )
         self.result: Dict[str, str] = {}
